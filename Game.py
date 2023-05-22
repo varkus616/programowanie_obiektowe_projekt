@@ -2,6 +2,7 @@ import pygame
 
 import game_vars
 from MenuState import MenuState
+from GameState import GameState
 from StateManager import *
 
 
@@ -13,10 +14,13 @@ class Game(metaclass=SingletonMetaclass):
 
         self.ASSET_MANAGER = AssetManager()
         self.ASSET_MANAGER.load_texture("image.png")
+        self.ASSET_MANAGER.load_texture("ANIMACJA.png")
+
         self.STATE_MANAGER: StateManager = StateManager(StateSharedContext(
             self.WINDOW, self.ASSET_MANAGER))
 
         self.STATE_MANAGER.register_state("Menu State", MenuState)
+        self.STATE_MANAGER.register_state("Game State", GameState)
         self.STATE_MANAGER.push_state("Menu State")
 
         pygame.display.set_caption(caption)
@@ -26,7 +30,7 @@ class Game(metaclass=SingletonMetaclass):
 
     def handle_events(self):
         for event in pygame.event.get():
-            print(event)
+            #print(event)
             if event.type == pygame.QUIT:
                 game_vars.RUNNING = False
             self.STATE_MANAGER.handle_events(event)
@@ -35,8 +39,8 @@ class Game(metaclass=SingletonMetaclass):
         self.STATE_MANAGER.update(dt)
 
     def render(self):
-        self.WINDOW.fill((0, 0, 0))
+        self.WINDOW.fill((0, 0, 0)) #CLEAR SCREEN
 
-        self.STATE_MANAGER.render(self.WINDOW)
+        self.STATE_MANAGER.render(self.WINDOW) #BLIT EVERYTHING
 
-        pygame.display.flip()
+        pygame.display.flip() #RENDER IT ON SCREEN

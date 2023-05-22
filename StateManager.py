@@ -33,8 +33,8 @@ class StateManager(metaclass=SingletonMetaclass):
     States managing class (pushing on stack, pop, etc...)
     __state_stack: stack for all the states created in the game
     __request_stack: stack for pending request from game
-    __registered_states: states registered to use, basically a dict where key is string state name
-                         and value is function creating this state
+    __registered_states: states registered to use, basically a dict where key is a string state name
+                         and value is a function creating this state
     """
 
     def __init__(self, context):
@@ -46,6 +46,9 @@ class StateManager(metaclass=SingletonMetaclass):
     def push_state(self, state_type):
         self.__request_stack.append((StackAction.PUSH, state_type))
 
+    def switch_state(self, state_type):
+        self.__request_stack.append((StackAction.SWITCH, state_type))
+
     def pop_state(self):
         if len(self.__state_stack) > 0:
             self.__request_stack.append((StackAction.POP, None))
@@ -54,7 +57,7 @@ class StateManager(metaclass=SingletonMetaclass):
         self.__request_stack.append((StackAction.CLEAR, None))
 
     def handle_requests(self):
-        for request in self.__request_stack:
+        for request in self.__request_stack[::-1]:
             stack_action, state_type = request
             if stack_action == StackAction.PUSH:
                 self.__state_stack.append(self.create_state(state_type))
@@ -81,11 +84,9 @@ class StateManager(metaclass=SingletonMetaclass):
             state.handle_events(event)
 
     def update(self, dt):
+        self.handle_requests()
         for state in self.__state_stack:
             state.update(dt)
-        self.handle_requests()
-        if len(self.__state_stack) < 1:
-            game_vars.RUNNING = False
 
     def render(self, window):
         for state in self.__state_stack:
@@ -107,8 +108,7 @@ class State(abc.ABC):
         self.state_manager.push_state(state_type)
 
     def request_stack_switch(self, state_type):
-        self.state_manager.pop_state()
-        self.state_manager.push_state(state_type)
+        self.state_manager.switch_state(state_type)
 
     def request_stack_clear(self):
         self.state_manager.clear_stack()

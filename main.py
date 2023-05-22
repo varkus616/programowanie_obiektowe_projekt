@@ -3,11 +3,12 @@
 if __name__ == "__main__":
     import pygame
     from Game import Game
+    from game_vars import *
     from pygame.locals import *
 
     pygame.init()
 
-    game = Game("GRA", (1200, 600))
+    game = Game("GRA", SCREEN_SIZE)
 
     """
     Using delta time between frames to set frame rate to 60fps

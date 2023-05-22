@@ -11,11 +11,11 @@ class AssetManager(metaclass=SingletonMetaclass):
         self.__TEXTURE_HOLDER = {}
 
     def load_texture(self, name: str):
-        """Loads texture and returns img object"""
+        """Loads texture and stores img object in dict via [name, texture]"""
         try:
             self.__TEXTURE_HOLDER[name] = pygame.image.load(
                 os.path.join(self.CWD, name)
-            ).convert()
+            ).convert_alpha()
         except FileNotFoundError as msg:
             print("CANNOT LOAD IMAGE:", name)
             raise SystemExit(msg)
@@ -24,4 +24,4 @@ class AssetManager(metaclass=SingletonMetaclass):
         if self.__TEXTURE_HOLDER[name] is not None:
             return self.__TEXTURE_HOLDER[name]
         else:
-            raise SystemExit("CAN'T GET DESIRED TEXTURE (NOT LOADED)")
+            raise SystemExit("CAN'T GET DESIRED TEXTURE (PROBABLY NOT LOADED)")
