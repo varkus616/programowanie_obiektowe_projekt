@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="751b875f-3d9c-4989-8c5c-4a4180408c2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my_utilities.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/command.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity_components.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity_systems.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/event_system.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game_map.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/options_state.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Programowanie_Obiektowe_2_Zaliczenie.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Programowanie_Obiektowe_2_Zaliczenie.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssetManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/AssetManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANIMACJA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AssetManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/asset_manager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameState.py" beforeDir="false" afterPath="$PROJECT_DIR$/GameState.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StateManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/StateManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/animator.py" beforeDir="false" afterPath="$PROJECT_DIR$/animator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuState.py" beforeDir="false" afterPath="$PROJECT_DIR$/MenuState.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StateManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/state_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/game_vars.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_vars.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_utilities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleton.py" beforeDir="false" afterPath="$PROJECT_DIR$/singleton.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,19 +45,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2PfJNQfKzgtB05Jd3ES5n22q9Fe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ostat/AppData/Local/Programs/Python/Python311&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+  }
+}</component>
   <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python">
       <module name="Programowanie_Obiektowe_2_Zaliczenie" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -47,11 +74,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_NAME" value="Python 3.7 (Programowanie_Obiektowe_2_Zaliczenie)" />
+      <option name="WORKING_DIRECTORY" value="E:\PROJEKTY PYTHON\Programowanie_Obiektowe_2_Zaliczenie" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="E:\PROJEKTY PYTHON\Programowanie_Obiektowe_2_Zaliczenie\main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -60,11 +88,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -78,6 +101,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -91,54 +115,26 @@
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="326" y="0" key="CommitChangelistDialog2" timestamp="1684752954211">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state x="326" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1684752954211" />
-    <state width="1152" height="90" key="GridCell.Tab.0.bottom" timestamp="1684753148273">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state width="1152" height="90" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1684753148273" />
-    <state width="1152" height="90" key="GridCell.Tab.0.center" timestamp="1684753148273">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state width="1152" height="90" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1684753148273" />
-    <state width="1152" height="90" key="GridCell.Tab.0.left" timestamp="1684753148273">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state width="1152" height="90" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1684753148273" />
-    <state width="1152" height="90" key="GridCell.Tab.0.right" timestamp="1684753148273">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state width="1152" height="90" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1684753148273" />
-    <state width="1339" height="222" key="GridCell.Tab.1.bottom" timestamp="1684687333696">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state width="1339" height="222" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1684687333696" />
-    <state width="1339" height="222" key="GridCell.Tab.1.center" timestamp="1684687333696">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state width="1339" height="222" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1684687333696" />
-    <state width="1339" height="222" key="GridCell.Tab.1.left" timestamp="1684687333696">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state width="1339" height="222" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1684687333696" />
-    <state width="1339" height="222" key="GridCell.Tab.1.right" timestamp="1684687333696">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state width="1339" height="222" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1684687333696" />
-    <state x="128" y="7" key="SettingsEditor" timestamp="1683962392041">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state x="128" y="7" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1683962392041" />
-    <state x="716" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1684752524714">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state x="716" y="189" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1684752524714" />
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1684686246528">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1684686246528" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,0 +1,194 @@
+{
+  "tiles": {
+
+  "Rock":
+  {
+    "frame": {"x": 0,"y": 448,"w": 32,"h": 32},
+    "id": 896,
+    "type":"terrain",
+    "animated": false
+  },
+  "Grass":
+  {
+    "frame": {"x": 0,"y": 480,"w": 32,"h": 32},
+    "id": 960,
+    "type": "terrain",
+    "animated": false
+  },
+  "Water":
+  {
+    "frame": {"x": 864,"y": 608,"w": 32,"h": 32},
+    "id": 1243,
+    "type": "terrain",
+    "animated": false
+  },
+  "Player":
+  {
+    "frame": {"x": 128,"y": 64, "w": 32,"h": 32},
+    "id": 132,
+    "type": "player",
+    "animated": false
+  },
+    "Fireball":
+    {
+      "frame": {"x": 1184,"y": 192, "w": 32,"h": 32},
+      "id": 421,
+      "type": "player",
+      "animated": false
+    },
+  "Pig":
+  {
+    "frame": {"x": 96,"y": 128, "w": 32,"h": 32},
+    "id": 259,
+    "type": "mob",
+    "animated": false
+  },
+  "Dragon":
+  {
+    "frame": {"x": 96,"y": 96, "w": 32,"h": 32},
+    "id": 195,
+    "type": "enemy",
+    "animated": false
+  },
+  "Armor":
+  {
+    "frame": {"x": 32,"y": 672, "w": 32,"h": 32},
+    "id": 193,
+    "type": "item",
+    "animated": false
+  },
+    "Teleport":
+    {
+      "frame": {"x": 928,"y": 480, "w": 32,"h": 32},
+      "id": 989,
+      "type": "teleport",
+      "animated": false
+    },
+    "Wall1":
+    {
+      "frame": {"x": 576,"y": 448, "w": 32,"h": 32},
+      "id": 914,
+      "type": "terrain",
+      "animated": false
+    },
+    "Wall2":
+    {
+      "frame": {"x": 1440,"y": 576, "w": 32,"h": 32},
+      "id": 1197,
+      "type": "terrain",
+      "animated": false
+    },
+    "Wall3":
+    {
+      "frame": {"x": 1344,"y": 576, "w": 32,"h": 32},
+      "id": 1194,
+      "type": "terrain",
+      "animated": false
+    },
+    "Dirt":
+    {
+      "frame": {"x": 64,"y": 448, "w": 32,"h": 32},
+      "id": 898,
+      "type": "terrain",
+      "animated": false
+    },
+    "Dirt2":
+    {
+      "frame": {"x": 1152,"y": 416, "w": 32,"h": 32},
+      "id": 868,
+      "type": "terrain",
+      "animated": false
+    },
+    "Doors":
+    {
+      "frame": {"x": 512,"y": 480, "w": 32,"h": 32},
+      "id": 976,
+      "type": "terrain",
+      "animated": false
+    },
+    "Gate":
+    {
+      "frame": {"x": 736,"y": 352, "w": 32,"h": 32},
+      "id": 727,
+      "type": "terrain",
+      "animated": false
+    },
+    "Gate2":
+    {
+      "frame": {"x": 864,"y": 352, "w": 32,"h": 32},
+      "id": 731,
+      "type": "terrain",
+      "animated": false
+    },
+    "Enemy":
+    {
+      "frame": {"x": 96,"y": 288, "w": 32,"h": 32},
+      "id": 579,
+      "type": "enemy",
+      "animated": false
+    },
+    "Enemy2":
+    {
+      "frame": {"x": 800,"y": 96, "w": 32,"h": 32},
+      "id": 217,
+      "type": "enemy",
+      "animated": false
+    },
+    "Enemy3":
+    {
+      "frame": {"x": 928,"y": 128, "w": 32,"h": 32},
+      "id": 285,
+      "type": "enemy",
+      "animated": false
+    },
+    "Enemy4":
+    {
+      "frame": {"x": 896,"y": 192, "w": 32,"h": 32},
+      "id": 412,
+      "type": "enemy",
+      "animated": false
+    },
+    "Boss":
+    {
+      "frame": {"x": 1056,"y": 192, "w": 32,"h": 32},
+      "id": 417,
+      "type": "enemy",
+      "animated": false
+    },
+    "Fountain":
+    {
+      "frame": {"x": 704,"y": 352, "w": 32,"h": 32},
+      "id": 726,
+      "type": "terrain",
+      "animated": false
+    },
+    "Bow":
+    {
+      "frame": {"x": 640,"y": 928, "w": 32,"h": 32},
+      "id": 1876,
+      "type": "item",
+      "animated": false
+    },
+    "Sword":
+    {
+      "frame": {"x": 704,"y": 928, "w": 32,"h": 32},
+      "id": 1878,
+      "type": "item",
+      "animated": false
+    },
+    "Sword2":
+    {
+      "frame": {"x": 672,"y": 896, "w": 32,"h": 32},
+      "id": 1813,
+      "type": "item",
+      "animated": false
+    },
+    "Trident":
+    {
+      "frame": {"x": 1600,"y": 896, "w": 32,"h": 32},
+      "id": 1842,
+      "type": "item",
+      "animated": false
+    }
+  }
+}
